@@ -1,103 +1,105 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Construct tables</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Construct tables</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
 
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
+      caption {
+        padding: 5px;
+        border: 3px double black;
+        background-color: gray;
+        color: wheat;
+        text-transform: uppercase;
+      }
 
-    caption {
-      padding: 5px;
-      border: 3px double black;
-      background-color: gray;
-      color: wheat;
-      text-transform: uppercase;
-    }
+      th {
+        margin: 2px;
+        padding: 2px;
+        border: 3px double black;
+        font-size: medium;
+        font-weight: 900;
+      }
 
-    th {
-      margin: 2px;
-      padding: 2px;
-      border: 3px double black;
-      font-size: medium;
-      font-weight: 900;
-    }
+      td {
+        padding: 2px;
+        text-align: center;
+        font-weight: 500;
+        background-color: brown;
+        color: whitesmoke;
+        text-shadow: 0 0 10px wheat;
+      }
+    </style>
+  </head>
 
-    td {
-      padding: 2px;
-      text-align: center;
-      font-weight: 500;
-      background-color: brown;
-      color: whitesmoke;
-      text-shadow: 0 0 10px wheat;
-    }
-  </style>
-</head>
-
-<body>
-  <table style="
+  <body>
+    <table
+      style="
         font-size: large;
         font-family: sans-serif;
         padding: 2px;
         border: 3px double black;
         background-color: paleturquoise;
-      ">
-    <!-- colgroup -->
-    <colgroup>
-      <col />
-      <col span="2" style="background-color: tan" />
-      <col span="2" style="background-color: darkgoldenrod" />
-    </colgroup>
+      "
+    >
+      <!-- colgroup -->
+      <colgroup>
+        <col />
+        <col span="2" style="background-color: tan" />
+        <col span="2" style="background-color: darkgoldenrod" />
+      </colgroup>
 
-    <caption>
-      Produtos produzidos vs vendidos
-    </caption>
-    <thead>
-      <tr>
-        <th rowspan="2">
-          <img src="https://lh3.googleusercontent.com/-UoyV6MyQVBI/TmlgUyfmSFI/AAAAAAAAKCU/glY3v6MRtBI/bob_esponja.gif"
-            alt="" />
-        </th>
-        <th colspan="2">Loja 01</th>
-        <th colspan="2">Loja 02</th>
-      </tr>
+      <caption>
+        Produtos produzidos vs vendidos
+      </caption>
+      <thead>
+        <tr>
+          <th rowspan="2">
+            <img
+              src="https://lh3.googleusercontent.com/-UoyV6MyQVBI/TmlgUyfmSFI/AAAAAAAAKCU/glY3v6MRtBI/bob_esponja.gif"
+              alt=""
+            />
+          </th>
+          <th scope="colgroup" colspan="2">Loja 01</th>
+          <th scope="colgroup" colspan="2">Loja 02</th>
+        </tr>
 
-      <tr>
-        <th>Produzidos</th>
-        <th>Vendidos</th>
-        <th>Produzidos</th>
-        <th>Vendidos</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th>Vassouras</th>
-        <td>30</td>
-        <td>30</td>
-        <td>40</td>
-        <td>30</td>
-      </tr>
-      <tr>
-        <th>Escadas</th>
-        <td>50</td>
-        <td>30</td>
-        <td>100</td>
-        <td>80</td>
-      </tr>
-    </tbody>
-  </table>
-</body>
-
+        <tr>
+          <th scope="col">Produzidos</th>
+          <th scope="col">Vendidos</th>
+          <th scope="col">Produzidos</th>
+          <th scope="col">Vendidos</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Vassouras</th>
+          <td>30</td>
+          <td>30</td>
+          <td>40</td>
+          <td>30</td>
+        </tr>
+        <tr>
+          <th>Escadas</th>
+          <td>50</td>
+          <td>30</td>
+          <td>100</td>
+          <td>80</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
 </html>
