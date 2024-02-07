@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+}
+form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+fieldset{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    width: calc(25%);
+    height: calc(70%);
+    padding: 0 calc(1%);
+}
+span{
+    width: calc(100%);
+}
+label{
+    display: block;
+}
+button{
+    display: block;
+    width: 30%
+}
+legend, label, input, button{
+    font-size: 1.7rem;
+}
+input, textarea{
+    display: block;
+    width: calc(60%);
+    padding: .8rem;
+}
+textarea{
+    font-size: .8rem;
+}
