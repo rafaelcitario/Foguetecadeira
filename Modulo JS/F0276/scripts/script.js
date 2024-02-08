@@ -27,9 +27,16 @@ function login(user) {
     return isAdmin(user)
 }
 
+/**
+ * When the code we want execute is called outside of try-catch block
+ * it stops entire application.
+ * 
+ * But, if we called the code inside the block, 
+ * it should be executed, throwing error and the application stays running, showing the error message at the screen!
+ */
+login(new User("Leigislane", 25, "a@a.com", false))
 try {
-    // login(new User("Rafael", 28, "a@a.com", true))
-    login(new User("Leigislane", 25, "a@a.com", false))
+    // login(new User("Rafael", 28, "a@a.com", false))
 } catch (e) {
     document.write(e);
 }
