@@ -1,0 +1,39 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'JetBrains Mono', sans-serif;
+}
+body{
+  background-color: purple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+button{
+  font-size: 1.2rem;
+  padding: .6rem 1rem;
+  color: purple;
+  font-weight: 550;
+}
+button:hover{
+  background-color: pink;
+  color: white;
+  border: .5px solid wheat;
+}
+.card-alert{
+  background-color: crimson;
+  height: calc(30%);
+  width: calc(20%);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.invisible {
+  display: none !important;
+}
