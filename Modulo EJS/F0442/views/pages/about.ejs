@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <%- include('head'); %>
+  <%- include('../partials/head'); %>
   <body
-    class="container pt-5 d-flex flex-column bg-dark selector-for-some-widget over-flow-hidden"
+    class="container d-flex flex-column selector-for-some-widget overflow-visible"
     style="height: 100vh"
   >
-    <%- include('header'); %>
+    <%- include('../partials/header', {pagina: 'About'}); %>
     <main class="selector-for-some-widget">
-      <div class="p-2 bg-secondary-subtle">
+      <div class="p-3 bg-secondary-subtle">
         <h1>Sobre mim</h1>
         <p>Oi, sou o Rafael, desenvolvedor web!</p>
 
@@ -18,7 +18,7 @@
             <div class="d-flex flex-row justify-content-center gap-5 row">
               <ul class="navbar-nav list-group col">
                 <li class="nav-item list-group-item bg-light">
-                  <p class="list-group-item active bg-success">Frontend:</p>
+                  <p class="list-group-item text-white bg-success">Frontend:</p>
                   <ul class="list-group">
                     <li class="nav-item list-group-item">HTML</li>
                     <li class="nav-item list-group-item">CSS</li>
@@ -31,7 +31,7 @@
               </ul>
               <ul class="navbar-nav list-group col">
                 <li class="nav-item list-group-item bg-light">
-                  <p class="list-group-item active bg-success">Backend:</p>
+                  <p class="list-group-item text-white bg-success">Backend:</p>
                   <ul class="list-group">
                     <li class="nav-item list-group-item">Javascript</li>
                     <li class="nav-item list-group-item">Java</li>
@@ -43,7 +43,7 @@
               </ul>
               <ul class="navbar-nav list-group col">
                 <li class="nav-item list-group-item bg-light">
-                  <p class="list-group-item active bg-success">DB:</p>
+                  <p class="list-group-item text-white bg-success">DB:</p>
                   <ul class="list-group">
                     <li class="nav-item list-group-item">MySQL</li>
                     <li class="nav-item list-group-item">SQLite</li>
@@ -57,6 +57,6 @@
         </section>
       </div>
     </main>
-    <%- include('footer'); %>
+    <%- include('../partials/footer'); %>
   </body>
 </html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <%- include('../partials/head'); %>
+  <body
+    class="container d-flex flex-column selector-for-some-widget over-flow-hidden"
+    style="height: 100vh"
+  >
+    <%- include('../partials/header'); %>
+    <main class="selector-for-some-widget">
+      <div class="p-3 bg-secondary-subtle">
+        <h1 class="">Node com EJS</h1>
+        <p>Vamos aprender a trabalhar com EJS</p>
+      </div>
+    </main>
+
+    <ul class="list-group">
+      <% anagrams.forEach(letter => { %>
+      <li class="list-group-item">
+        <strong><%= letter.title %>:</strong> <%= letter.message%>
+      </li>
+      <% }) %>
+    </ul>
+    <%- include('../partials/footer'); %>
+  </body>
+</html>
