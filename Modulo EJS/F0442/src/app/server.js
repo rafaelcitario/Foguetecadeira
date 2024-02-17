@@ -11,6 +11,10 @@ app.get("/", (req, res) => {
   res.render("index");
 });
 
+app.get("/about", (req, res) => {
+  res.render("about");
+});
+
 app.listen(SERVER.PORT, () =>
   console.log(`Server is running at ${SERVER.HOST}:${SERVER.PORT}`)
 );
