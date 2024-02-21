@@ -39,3 +39,30 @@ console.log(pilotos);
 console.log("\ndeletando um elemento do array na primeira posição");
 pilotos.shift();
 console.log(pilotos);
+
+// dividindo o array em 2
+let equipeAzul = [];
+let equipeVermelha = [];
+for (let i = 0; i < pilotos.length; i++) {
+  if (i % 2 == 0) equipeAzul.push(pilotos[i]);
+  else equipeVermelha.push(pilotos[i]);
+}
+console.log(`\nAntiga equipe: ${pilotos}
+  Equipe Azul: ${equipeAzul}
+  Equipe Vermelha: ${equipeVermelha}`);
+
+/**
+ * obs:
+ * slice não modifica array.
+ * splice modifica
+ */
+const equipeAmarela = pilotos.slice(0, 2);
+const equipeVerde = pilotos.slice(2, 4);
+
+console.log("\nEquipe Amarela: ");
+console.log(equipeAmarela);
+console.log("\nEquipe Verde: ");
+console.log(equipeVerde);
+
+console.log("\nAntiga Equipe: ");
+console.log(pilotos);
