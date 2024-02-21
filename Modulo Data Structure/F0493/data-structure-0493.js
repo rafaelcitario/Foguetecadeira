@@ -66,3 +66,17 @@ console.log(equipeVerde);
 
 console.log("\nAntiga Equipe: ");
 console.log(pilotos);
+
+// imprimindo todos os valores de um vetor 3x4
+const vector = [
+  ["Cibernética", "Nuvem", "Algoritmo"],
+  ["Robótica", "Inovação", "Virtual"],
+  ["Digital", "Cibersegurança", "Inteligência"],
+];
+
+let count = 0;
+for (let i = 0; i < vector.length; i++) {
+  for (let j = 0; j < vector[i].length; j++) {
+    console.log(`${count++}. ${vector[i][j]}`);
+  }
+}
