@@ -23,3 +23,19 @@ console.log("\ninterando o array com for in");
 for (let piloto in pilotos) {
   console.log(pilotos[piloto]);
 }
+
+// adicionando um elemento
+console.log("\nadicionando na ultima posição");
+pilotos.push("Rubinho barrichelo");
+console.log(pilotos);
+console.log("\nadicionando na primeira posição");
+pilotos.unshift("Drugovich");
+console.log(pilotos);
+
+// deletando um elemento
+console.log("\ndeletando um elemento do array na última posição");
+pilotos.pop();
+console.log(pilotos);
+console.log("\ndeletando um elemento do array na primeira posição");
+pilotos.shift();
+console.log(pilotos);
