@@ -22,16 +22,35 @@ class Stack {
     }
   }
   peek() {
+    return this.data[this.top];
+  }
+
+  isEmpity() {
     if (this.top < 0) {
-      return "This Stack is Empity!";
+      return true;
     }
-    return `TOP STACK: ${this.data[this.top]}`;
+    return false;
+  }
+  print(value = null) {
+    if (value === null) {
+      return console.log(this.data);
+    }
+    return console.log(value);
+  }
+  lenght() {
+    return this.data.length;
   }
 }
 
-// use stack
+// call the stack
 const pilha = new Stack();
-pilha.push("Popular C");
-pilha.push("Polemic Knowledge");
-pilha.push("BR Society");
-console.log(pilha.peek());
+pilha.print();
+pilha.push("Leite");
+pilha.push("Chocolate");
+pilha.push("Farinha");
+pilha.push("Fermento");
+pilha.print(pilha.isEmpity());
+pilha.print();
+pilha.pop();
+pilha.print(pilha.peek());
+pilha.print(pilha.lenght());
