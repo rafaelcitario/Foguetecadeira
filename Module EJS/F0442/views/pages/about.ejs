@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <%- include('../partials/head'); %>
+  <body
+    class="container d-flex flex-column selector-for-some-widget overflow-visible"
+    style="height: 100vh"
+  >
+    <%- include('../partials/header', {pagina: 'About'}); %>
+    <main class="selector-for-some-widget">
+      <div class="p-3 bg-secondary-subtle">
+        <h1>Sobre mim</h1>
+        <p>Oi, sou o Rafael, desenvolvedor web!</p>
+
+        <section>
+          <h4>Habilidade e Tecnologias:</h4>
+
+          <div class="container">
+            <div class="d-flex flex-row justify-content-center gap-5 row">
+              <ul class="navbar-nav list-group col">
+                <li class="nav-item list-group-item bg-light">
+                  <p class="list-group-item text-white bg-success">Frontend:</p>
+                  <ul class="list-group">
+                    <li class="nav-item list-group-item">HTML</li>
+                    <li class="nav-item list-group-item">CSS</li>
+                    <li class="nav-item list-group-item">React.js</li>
+                    <li class="nav-item list-group-item">EJS</li>
+                    <li class="nav-item list-group-item">Bootstrap</li>
+                    <li class="nav-item list-group-item">Tailwindcss</li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="navbar-nav list-group col">
+                <li class="nav-item list-group-item bg-light">
+                  <p class="list-group-item text-white bg-success">Backend:</p>
+                  <ul class="list-group">
+                    <li class="nav-item list-group-item">Javascript</li>
+                    <li class="nav-item list-group-item">Java</li>
+                    <li class="nav-item list-group-item">Node.js</li>
+                    <li class="nav-item list-group-item">Spring Boot</li>
+                    <li class="nav-item list-group-item">Express</li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="navbar-nav list-group col">
+                <li class="nav-item list-group-item bg-light">
+                  <p class="list-group-item text-white bg-success">DB:</p>
+                  <ul class="list-group">
+                    <li class="nav-item list-group-item">MySQL</li>
+                    <li class="nav-item list-group-item">SQLite</li>
+                    <li class="nav-item list-group-item">H2</li>
+                    <li class="nav-item list-group-item">PostgreSQL</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <%- include('../partials/footer'); %>
+  </body>
+</html>
