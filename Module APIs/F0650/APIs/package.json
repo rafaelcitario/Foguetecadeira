@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "server": "nodemon ./index.js --watch"
+  },
   "keywords": [],
   "author": "Rafael Citario",
   "license": "ISC",
