@@ -20,8 +20,16 @@ app.delete("/delete/:id", (req, res) => {
   res.send(req.params.id);
 });
 
+/**
+ *  Chamada de parametros
+ * query
+ * id
+ * body
+ */
 
-
+app.get("/chamada/:id", (req, res) => res.send(req.params.id)); // localhost:3000/chamada/3 <= id
+app.get("/chamada/", (req, res) => res.send(req.query.q)); // localhost:3000/chamada/?q=rafael <= query
+app.post("/chamada", (req, res) => res.send(req.body)); // localhost:3000/chamada <= body
 
 app.listen(SERVER.PORT, () =>
   console.log(`Acess: ${SERVER.HOST}:${SERVER.PORT}`)
